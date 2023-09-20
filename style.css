@@ -167,7 +167,7 @@ nav {
     display: flex;
     flex-direction: column-reverse;
     width: 30rem;
-    height: 60vh;
+    height: 53vh;
   }
 
   .number {
@@ -198,7 +198,7 @@ nav {
   }
 
   .guess {
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding: 1rem 2.5rem 1rem 9rem;
     width: 25px;
     font-size: 4rem;
