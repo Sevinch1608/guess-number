@@ -85,7 +85,7 @@ h1 {
   color: inherit;
   font-size: 5rem;
   padding: 2.5rem;
-  width: 25rem;
+  max-width: 25rem;
   text-align: center;
   display: block;
   margin-bottom: 3rem;
@@ -199,9 +199,9 @@ nav {
 
   .guess {
     margin-top: 3rem;
-    padding: 1rem 2.5rem 1rem 9rem;
-    width: 25px;
-    font-size: 4rem;
+    padding: 1rem 2rem;
+    font-size: 3.5rem;
+    max-width: 18rem;
   }
 
   .right p {
