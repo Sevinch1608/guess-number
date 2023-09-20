@@ -140,11 +140,19 @@ nav {
 
   .buttons {
     display: flex;
-    flex-direction: column
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .btn{
+    padding: 1.5rem 1.5rem;
+    font-size: 14px;
   }
 
   header {
-    height: 90vh;
+    height: 60vh;
   }
 
   h1 {
@@ -172,9 +180,7 @@ nav {
     justify-content: center;
   }
 
-  /* .message {
-    margin-bottom: 2rem;
-  } */
+ 
 
   .guess {
     margin-top: 5rem;
