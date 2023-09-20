@@ -50,13 +50,13 @@ document.querySelector('.check').addEventListener('click', () => {
       score--;
       document.querySelector('.score').textContent = score;
     } else {
+      if(guessNumber>highScore) highScore=guessNumber
       showMessage('✅ Correct Number!');
       NUMBER.textContent = computerNumber;
-
       document.querySelector('body').style.backgroundColor = '#60b347';
       NUMBER.style.width = '25rem';
-      highScore = (score > highScore) ? score : highScore;
-      document.querySelector('.highScore').textContent = highScore;
+      highScore = ((score > highScore) ? score : highScore);
+      document.querySelector('.label-highscore').innerHTML = `🥇 Highscore: <span class="highscore">${highScore}</span>`;
     }
   } else {
     showMessage('❌ You lost the game!');
@@ -70,7 +70,6 @@ document.querySelector('.again').addEventListener('click', function () {
   showMessage('Start guessing...');
   document.querySelector('.score').textContent = score;
   NUMBER.textContent = '?';
-
   document.querySelector('body').style.backgroundColor = '#222';
   NUMBER.style.width = '15rem';
 });
