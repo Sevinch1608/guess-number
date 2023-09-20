@@ -1,4 +1,4 @@
-document.querySelector('.english').addEventListener('click', function () {
+document.querySelector('.english').addEventListener('click',  () => {
   document.querySelector('.again').textContent = 'Again!';
   document.querySelector('.between').textContent = '(Between 1 and 20)';
   document.querySelector('h1').textContent = 'Guess My Number!';
@@ -6,6 +6,16 @@ document.querySelector('.english').addEventListener('click', function () {
   document.querySelector('.check').textContent = 'Check!';
   document.querySelector('.label-score').textContent = ' 💯 Score:   20';
   document.querySelector('.label-highscore').textContent = ' 🥇 Highscore:  0';
+});
+
+document.querySelector('.uzbek').addEventListener('click', () => {
+  document.querySelector('.again').textContent = 'Qayta!';
+  document.querySelector('.between').textContent = '(1 dan 20 gacha)';
+  document.querySelector('h1').textContent = "O'ylangan sonni top!";
+  document.querySelector('.message').textContent = 'Topishni boshlang...';
+  document.querySelector('.check').textContent = 'Tekshir!';
+  document.querySelector('.label-score').innerHTML = `💯 Ball:<span class="score">20</span>`;
+  document.querySelector('.label-highscore').innerHTML = `🥇 Yuqori ball:<span class="highscore">0</span>`;
 });
 
 let computerNumber = Math.trunc(Math.random() * 20) + 1;
@@ -65,18 +75,5 @@ document.querySelector('.again').addEventListener('click', function () {
   NUMBER.style.width = '15rem';
 });
 
-document.querySelector('.uzbek').addEventListener('click', () => {
-  language = 'uzb';
-  document.querySelector('.again').textContent = 'Qayta!';
-  document.querySelector('.between').textContent = '1 dan 20 gacha ';
-  document.querySelector('h1').textContent = "O'ylangan sonni top?";
-  document.querySelector('.check').textContent = 'Tekshir!';
-  document.querySelector('.message').textContent = 'Topishni boshlang...';
-  document.querySelector(
-    '.label-score'
-  ).innerHTML = `💯 Ball:<span class="score">20</span>`;
-  document.querySelector(
-    '.label-highscore'
-  ).innerHTML = `🥇 Yuqori ball:<span class="highscore">0</span>`;
-});
+
 
